@@ -5,7 +5,8 @@
   },
   "enabledPlugins": {
     "brag@brag": true,
-    "hyperframes@claude-plugins-official": true
+    "hyperframes@claude-plugins-official": true,
+    "watch@claude-watch": true
   },
   "extraKnownMarketplaces": {
     "brag": {
@@ -18,6 +19,12 @@
       "source": {
         "source": "github",
         "repo": "anthropics/claude-plugins-official"
+      }
+    },
+    "claude-watch": {
+      "source": {
+        "source": "github",
+        "repo": "taoufik123-collab/claude-watch"
       }
     }
   }
