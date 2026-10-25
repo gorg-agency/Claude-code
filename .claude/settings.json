@@ -1,0 +1,20 @@
+{
+  "enabledPlugins": {
+    "brag@brag": true,
+    "hyperframes@claude-plugins-official": true
+  },
+  "extraKnownMarketplaces": {
+    "brag": {
+      "source": {
+        "source": "github",
+        "repo": "latent-spaces/brag"
+      }
+    },
+    "claude-plugins-official": {
+      "source": {
+        "source": "github",
+        "repo": "anthropics/claude-plugins-official"
+      }
+    }
+  }
+}
