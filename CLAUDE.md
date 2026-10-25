@@ -9,6 +9,7 @@
 ## Posts para redes sociais
 
 - Antes de criar qualquer post, leia `referencias/posts/GUIA-DE-ESTILO.md` e use as fichas e imagens em `referencias/posts/imagens/` como base de estilo.
+- As cores são sempre as da GORG (seção 0 do guia: vermelho `#D82828`, preto, grafite `#1D1D1F`, cinzas e off-white `#F5F5F7`, fonte Inter). Das referências, use só layout, componentes e efeitos. Logo e paleta ficam em `referencias/marca/`.
 - Quando o usuário mandar novos posts de referência, salve em `referencias/posts/imagens/` com o próximo número e acrescente a ficha no guia.
 
 ## /watch (assistir vídeo)

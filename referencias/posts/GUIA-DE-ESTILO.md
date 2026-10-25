@@ -4,7 +4,45 @@ Biblioteca dos posts que você mandou como referência. Cada post tem uma ficha 
 
 **Para criar um post novo:** escolha uma família (seção 2), abra a ficha do post mais parecido (seção 3), use os componentes da seção 4 e confira a lista da seção 5.
 
-As fontes são palpites visuais com equivalente gratuito no Google Fonts. As cores foram medidas nas imagens (podem variar ±5% por causa da compressão JPG).
+**As cores dos posts novos são sempre as da GORG (seção 0).** Das referências vêm só o layout, os componentes, os efeitos e a estrutura do texto. As cores que aparecem nas fichas são as originais de cada referência e ficam só como registro.
+
+As fontes das fichas são palpites visuais com equivalente gratuito no Google Fonts. As cores das fichas foram medidas nas imagens (podem variar ±5% por causa da compressão JPG).
+
+---
+
+## 0. Cores da GORG (use sempre)
+
+Tiradas do site da GORG Presets (repositório `gorg-agency/gorgpresets.site`): `src/index.css`, `src/members/members.css` e as cores mais usadas nos componentes. Amostra em `../marca/paleta-gorg.png`.
+
+| Papel | Cor | Hex | Uso |
+|---|---|---|---|
+| **Destaque principal** | Vermelho GORG | `#D82828` | Palavra-chave do título, ícones, botões, CTA, formas sólidas. É a cor da marca (usada 335 vezes no site). |
+| Destaque com brilho | Vermelho brilho | `#FF4B4B` | Glow, neon, luz atrás do herói e **texto vermelho pequeno sobre fundo escuro**. |
+| Destaque escuro\* | Vermelho escuro | `#8E1616` | Meio de degradês, sombras vermelhas, faixas. |
+| Fundo vermelho\* | Vinho noite | `#3A0909` | Fundo escuro puxado para o vermelho, vinheta, base de degradê. |
+| **Fundo** | Preto | `#000000` | Fundo padrão (é o fundo do tema “cinema” da área de membros). |
+| Fundo 2 / cards | Grafite | `#1D1D1F` | Cards, pílulas, faixas. Também é o texto em fundo claro. |
+| Bordas e divisores | Chumbo | `#424245` | Linhas, bordas de cards sólidos. |
+| Texto apagado | Cinza escuro | `#6E6E73` | Microtexto, legendas. |
+| **Texto secundário** | Cinza | `#86868B` | Subtítulos e textos de apoio no escuro. |
+| Texto terciário | Cinza claro | `#A1A1A6` | Rodapé, informações de contato. |
+| **Texto principal** | Off-white | `#F5F5F7` | Títulos e texto em fundo escuro. No claro, é o fundo. |
+| Branco | Branco | `#FFFFFF` | Fundo da loja (versão clara) e reflexos de vidro. |
+
+\* Derivados do vermelho GORG para degradês. Não aparecem no site.
+
+**Regras:**
+- Uma cor só de destaque: o vermelho. Nada de azul, verde, roxo ou laranja das referências.
+- Vermelho `#D82828` sobre preto tem contraste 3,2:1. Serve para título grande, ícone e forma, mas **não para texto pequeno**. Texto vermelho pequeno no escuro vai em `#FF4B4B` (6,4:1).
+- No fundo claro, o vermelho `#D82828` serve para qualquer tamanho de texto (6,6:1 sobre branco).
+- Vidro sobre o preto: branco 6–12% com borda branca 15–25%. Com brilho na marca: borda `#D82828` 70% + glow `#FF4B4B` 40%.
+
+**Fonte:** Inter (é a fonte do site), em Black e Bold nos títulos e SemiBold e Regular no resto. A área de membros usa títulos em **caixa alta com espaçamento apertado**, pílulas e vidro fosco. Mantenha isso nos posts.
+
+**Logo:** em `../marca/`.
+- `logo-gorg-preto.png`: para fundo claro.
+- `logo-gorg-branco.png`: para fundo escuro (o “gorg” fica off-white e “PRESETS” continua vermelho).
+- `icone-gorg.png`: o “g” grafite e vermelho, para avatar e marca d'água.
 
 ---
 
@@ -39,21 +77,25 @@ Isto se repete em quase todos os 16 posts. É o que define o estilo.
 | **E. Verde neon no escuro** | 10, 11, 12, 13, 14 | Tecnológico, energia, crescimento | Marketing, CRM, listas de serviços |
 | **F. Vermelho líquido** | 15, 16 | Autoral, moderno, artístico | Marca pessoal, música, portfólio |
 
-### Paletas por família
+### Cada família nas cores da GORG
 
-| Família | Fundo | Fundo 2 | Destaque | Destaque 2 | Texto |
-|---|---|---|---|---|---|
-| A | `#01010B` | `#031642` / `#01062B` | `#E30102` vermelho | `#335B94` azul luz | `#FFFFFF` / `#7A7C88` |
-| B (claro) | `#FEFEFC` → `#E8E7E5` | `#0E1014` | `#EA572B` laranja | — | `#0E1014` |
-| B (escuro) | `#030101` | `#381F19` | `#E46117` / `#EE4A1B` | `#F7A83B` brilho | `#FFFFFF` |
-| C | `#000B1F` / `#0A142F` | `#132A6A` | `#1D54D9` / `#0761F8` | `#D0E44B` lima (só 04) | `#FFFFFF` / `#AACDF1` |
-| D | `#151127` | `#261838` | `#8755F7` roxo | `#B06CF1` | `#FFFFFF` / `#8274A2` |
-| E | `#020607` / `#010101` | `#062A19` / `#0A3C1C` | `#06FF65` / `#24CD6D` | `#31B183` verde-água | `#FFFFFF` |
-| F | `#000000` / `#3C0E16` | `#720F20` | `#C90118` / `#DB0119` | `#931128` vinho | `#FFFFFF` |
+Use esta tabela ao criar. A cor original de cada referência fica na coluna da direita só para comparar.
+
+| Família | Fundo | Fundo 2 / cards | Destaque | Brilho | Texto | Como adaptar | Original da referência |
+|---|---|---|---|---|---|---|---|
+| A | `#000000` | `#3A0909` → `#1D1D1F` | `#D82828` | `#FF4B4B` | `#F5F5F7` / `#86868B` | A luz azul vira luz branca fria (`#F5F5F7`). Fica a luz dividida vermelho + branco, com o vidro canelado. | vermelho `#E30102` + azul `#031642` / `#335B94` |
+| B claro | `#FFFFFF` → `#F5F5F7` | `#1D1D1F` | `#D82828` | — | `#1D1D1F` / `#6E6E73` | O laranja vira vermelho. É o visual da loja da GORG (fundo branco, preço vermelho, pílula grafite). | laranja `#EA572B` em branco |
+| B escuro | `#000000` | `#3A0909` | `#D82828` | `#FF4B4B` | `#F5F5F7` | O balão laranja vira balão vermelho e o duotone laranja vira duotone vermelho e cinza. | laranja `#E46117` / `#EE4A1B` |
+| C | `#000000` | `#1D1D1F` | `#D82828` | `#FF4B4B` | `#F5F5F7` / `#86868B` | O azul vira vermelho: holofote, bordas com brilho, ícones em círculo. O lima do post 04 também vira vermelho. | azul `#1D54D9` / `#0761F8` |
+| D | `#000000` | `#1D1D1F` | degradê `#D82828` → `#FF4B4B` | `#FF4B4B` | `#F5F5F7` / `#86868B` | Os números e o “in 4 steps.” passam do degradê roxo para o vermelho. | roxo `#8755F7` |
+| E | `#000000` | `#1D1D1F` | `#D82828` | `#FF4B4B` | `#F5F5F7` | O neon verde vira neon `#FF4B4B`. O card “ativo” sólido fica `#D82828`. | verde `#06FF65` / `#24CD6D` |
+| F | `#000000` / `#3A0909` | `#8E1616` | `#D82828` | `#FF4B4B` | `#F5F5F7` | Já é vermelho: troque os vermelhos da referência pelos da GORG. | vermelho `#C90118` / vinho `#931128` |
 
 ---
 
 ## 3. Fichas dos posts
+
+> As paletas abaixo são as **originais** de cada referência, guardadas como registro. Ao criar, troque pelas cores da GORG usando a tabela “Cada família nas cores da GORG” (seção 2).
 
 ### 01. Jurídico, carrossel vermelho e azul
 `imagens/01-juridico-carrossel-vermelho-azul.jpg` · Família A
@@ -255,19 +297,30 @@ Isto se repete em quase todos os 16 posts. É o que define o estilo.
 
 ## 4. Componentes para recriar em HTML/CSS
 
-Valores base para uma tela de 1080px de largura. Troque `--acento` pela cor da família.
+Valores base para uma tela de 1080px de largura, já com as cores da GORG.
 
 ```css
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap");
+
 :root {
-  --fundo: #020607;            /* fundo escuro da família */
-  --acento: #06FF65;           /* cor de destaque */
-  --texto: #FFFFFF;
-  --texto-2: rgba(255,255,255,.62);
+  /* Cores da GORG (seção 0) */
+  --fundo: #000000;
+  --fundo-2: #1D1D1F;
+  --vinho: #3A0909;
+  --acento: #D82828;           /* vermelho GORG */
+  --acento-brilho: #FF4B4B;    /* glow e texto vermelho pequeno no escuro */
+  --acento-escuro: #8E1616;
+  --texto: #F5F5F7;
+  --texto-2: #86868B;
+  --texto-3: #A1A1A6;
+  --borda: #424245;
   --margem: 80px;              /* ~7,5% de 1080 */
+  font-family: "Inter", system-ui, sans-serif;
 }
 
 /* Título grande com palavra-chave colorida */
-.titulo { font: 700 120px/0.98 "Inter Tight", sans-serif; letter-spacing: -0.035em; color: var(--texto); }
+.titulo { font: 900 120px/0.98 "Inter", sans-serif; letter-spacing: -0.035em; color: var(--texto); }
+.titulo.caixa-alta { text-transform: uppercase; letter-spacing: -0.02em; } /* jeito da área de membros GORG */
 .titulo em { font-style: normal; color: var(--acento); }
 
 /* Card de vidro */
@@ -285,8 +338,8 @@ Valores base para uma tela de 1080px de largura. Troque `--acento` pela cor da f
 
 /* Borda com brilho na cor da marca (Advbox, Fewlix) */
 .brilho { border: 1.5px solid color-mix(in srgb, var(--acento) 70%, transparent);
-          box-shadow: 0 0 24px color-mix(in srgb, var(--acento) 45%, transparent),
-                      inset 0 0 18px color-mix(in srgb, var(--acento) 25%, transparent); }
+          box-shadow: 0 0 24px color-mix(in srgb, var(--acento-brilho) 45%, transparent),
+                      inset 0 0 18px color-mix(in srgb, var(--acento-brilho) 25%, transparent); }
 
 /* Vidro canelado (post 01): faixas verticais por cima da foto */
 .canelado {
@@ -299,7 +352,13 @@ Valores base para uma tela de 1080px de largura. Troque `--acento` pela cor da f
 
 /* Feixe/holofote (Advbox) e vinheta colorida (FOMO, Fewlix) */
 .holofote { background: radial-gradient(40% 70% at 50% 20%, color-mix(in srgb, var(--acento) 55%, transparent), transparent 70%); }
-.vinheta  { background: radial-gradient(75% 75% at 50% 50%, transparent 55%, color-mix(in srgb, var(--acento) 35%, transparent)); }
+.vinheta  { background: radial-gradient(75% 75% at 50% 50%, transparent 55%, color-mix(in srgb, var(--vinho) 90%, transparent)); }
+
+/* Degradê líquido vermelho (família F) */
+.liquido { background:
+  radial-gradient(60% 80% at 80% 70%, var(--acento) 0%, transparent 60%),
+  radial-gradient(50% 60% at 20% 20%, var(--acento-escuro) 0%, transparent 65%),
+  var(--fundo); }
 
 /* Granulação (Velovis) */
 .grao { background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence baseFrequency='.9'/></filter><rect width='100%' height='100%' filter='url(%23n)' opacity='.08'/></svg>"); }
@@ -313,21 +372,22 @@ Valores base para uma tela de 1080px de largura. Troque `--acento` pela cor da f
 
 ### Fotos e objetos 3D com IA
 
-Modelos de prompt para gerar as imagens heroicas:
+Modelos de prompt para gerar as imagens heroicas, já nas cores da GORG (vermelho #D82828, preto e luz branca fria):
 
-- **Família A:** “retrato cinematográfico de perfil, advogado de terno, luz dividida com gel azul à esquerda e vermelho à direita, fundo preto, pouca luz, alto contraste, fotografia 85mm”.
-- **Família B:** “capacete de obra seguro por uma mão, recortado em fundo branco, duotone laranja e cinza, fotografia de produto”.
-- **Família C:** “peça de xadrez rei de vidro azul translúcido, iluminada por baixo, anéis de luz concêntricos no chão, fundo azul-marinho escuro, render 3D”.
-- **Família E:** “mão tocando ícones holográficos de vidro sobre um tablet, brilho verde neon, fundo preto, fotografia de estúdio”.
-- **Família F:** “degradê líquido abstrato vermelho e preto, textura suave de mesh gradient, sem objetos”.
+- **Família A:** “retrato cinematográfico de perfil, pessoa de roupa escura, luz dividida com gel vermelho (#D82828) de um lado e luz branca fria do outro, fundo preto, pouca luz, alto contraste, fotografia 85mm”.
+- **Família B:** “objeto do produto seguro por uma mão, recortado em fundo branco, duotone vermelho e cinza, fotografia de produto”.
+- **Família C:** “peça de xadrez rei de vidro vermelho translúcido, iluminada por baixo, anéis de luz vermelha concêntricos no chão, fundo preto, render 3D”.
+- **Família E:** “mão tocando ícones holográficos de vidro sobre um celular, brilho vermelho neon, fundo preto, fotografia de estúdio”.
+- **Família F:** “degradê líquido abstrato vermelho (#D82828) e preto, textura suave de mesh gradient, sem objetos”.
 
 ---
 
 ## 5. Lista para conferir um post novo
 
 - [ ] Formato certo (4:5 feed, 1:1, 9:16 story) e margem de 6–9% em todos os lados.
-- [ ] Fundo escuro puxado para a cor da marca (ou branco quente na família B clara).
-- [ ] Uma só cor de destaque saturada, usada em 1 palavra/linha do título, ícones e CTA.
+- [ ] Só cores da GORG (seção 0): fundo preto `#000000` (ou branco na família B clara) e vermelho `#D82828` como único destaque.
+- [ ] Vermelho em 1 palavra ou linha do título, ícones e CTA. Texto vermelho pequeno no escuro em `#FF4B4B`.
+- [ ] Fonte Inter e logo GORG certo para o fundo (`logo-gorg-branco.png` no escuro, `logo-gorg-preto.png` no claro).
 - [ ] Título com no máximo 4 linhas, peso Bold/Black, espaçamento negativo.
 - [ ] Hierarquia de no máximo 3 níveis: título, apoio, detalhe.
 - [ ] Um herói visual (foto com luz colorida, objeto 3D ou tipografia gigante).
